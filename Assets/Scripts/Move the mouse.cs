@@ -22,7 +22,7 @@ public class Movethemouse : MonoBehaviour
 
         {
             //Y: move to that position 
-            Vector2 mousePos = Camera.main.ScreenToViewportPoint(Mouse.current.position.ReadValue());
+            Vector2 mousePos = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
             transform.position = mousePos;
 
 
